@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>隐私政策 · 妙做 CookSnap</title>
+  <title>隐私政策 · 煮Fun</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -128,42 +128,52 @@
 
 <div class="hero">
   <div class="hero-icon">
-    <img src="logo.png" alt="妙做 CookSnap" />
+    <img src="logo.png" alt="煮Fun" />
   </div>
   <h1>隐私政策</h1>
-  <p class="sub">妙做 CookSnap · Privacy Policy</p>
-  <span class="updated">最后更新：2025 年 6 月 1 日</span>
+  <p class="sub">煮Fun · Privacy Policy</p>
+  <span class="updated">最后更新：2026 年 6 月 11 日</span>
 </div>
 
 <div class="container">
 
   <div class="section">
     <div class="section-title"><span class="icon">👋</span>简介</div>
-    <p>感谢你使用妙做（CookSnap）。本应用帮助你从小红书等平台一键导入菜谱、管理购物清单，并记录你的烹饪日记。</p>
-    <p>我们非常重视你的隐私。本政策说明我们收集哪些信息、如何使用，以及你的权利。</p>
+    <p>感谢你使用煮Fun。本应用帮助你从小红书等 30+ 内容平台一键导入菜谱、步骤式烹饪指导、管理购物清单，并以美食日历记录你的烹饪历程。</p>
+    <p>我们非常重视你的隐私。本政策说明我们访问哪些信息、如何使用，以及你的权利。</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><span class="icon">📦</span>我们收集的信息</div>
-    <p>妙做在你使用以下功能时会收集或访问相关信息：</p>
+    <div class="section-title"><span class="icon">📦</span>我们访问的信息</div>
+    <p>煮Fun 在你使用以下功能时会访问相关信息：</p>
     <ul>
-      <li><strong>账号信息</strong>：注册时需提供手机号或邮箱地址，用于账号创建、登录及会员服务验证。</li>
-      <li><strong>使用数据</strong>：你保存的菜谱、购物清单、烹饪记录等内容，与账号绑定存储在服务器，以便跨设备同步。</li>
-      <li><strong>相机权限</strong>：仅在你主动拍照记录烹饪成果时使用，照片保存在你的设备本地或你选择上传至账号。</li>
+      <li><strong>Apple 账号登录</strong>：支持使用 Apple ID 登录。登录时 Apple 会向本应用提供一个不可逆的匿名用户标识符，以及你选择共享的姓名。我们不会收到你的 Apple ID 邮箱原文（除非你选择共享），且不会存储密码。</li>
+      <li><strong>本地使用数据</strong>：你保存的菜谱、购物清单、烹饪记录、用户名称等数据仅存储在本设备本地，不会上传至任何服务器，卸载应用后由系统清除。</li>
+      <li><strong>相机权限</strong>：仅在你主动点击「拍照记录」时调用系统相机，用于记录烹饪成果。照片保存在你的设备本地，不会被上传或共享。</li>
+      <li><strong>相册写入权限</strong>：仅在你主动选择「保存到相册」时写入系统相册，不会读取你已有的照片。</li>
       <li><strong>剪贴板内容</strong>：当你点击「粘贴链接」按钮时读取剪贴板文字，用于导入菜谱链接，不会在后台自动读取。</li>
     </ul>
     <div class="highlight">
-      ⚡ 我们仅收集提供服务所必要的最少信息，不收集与功能无关的个人数据。
+      ⚡ MVP 版本中所有用户数据均存储在本设备本地，无服务器账号同步。我们仅收集提供服务所必要的最少信息。
     </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="icon">🌐</span>网络请求说明</div>
+    <ul>
+      <li><strong>菜谱链接解析</strong>：你粘贴的链接会通过我们的后端服务（阿里云函数计算）转发至 Coze AI 工作流进行菜谱内容识别。该过程仅用于解析菜谱，原始 URL 解析完成后不单独保留，不关联任何个人身份信息。</li>
+      <li><strong>封面图片加载</strong>：菜谱封面图片直接从小红书等来源平台的 CDN 加载，仅用于显示，不经过我们的服务器。</li>
+      <li>除以上两项外，应用不进行任何其他网络通信，不追踪用户行为，不投放广告。</li>
+    </ul>
   </div>
 
   <div class="section">
     <div class="section-title"><span class="icon">⚙️</span>信息如何使用</div>
     <ul>
-      <li>账号信息用于身份验证、会员权益管理及账号安全保护。</li>
-      <li>菜谱、购物清单、烹饪记录等数据存储在服务器，用于跨设备同步和功能正常运行。</li>
-      <li>你粘贴的链接发送至后端服务用于解析菜谱内容，解析完成后不再单独保留原始 URL。</li>
-      <li>我们可能使用匿名化的聚合数据（不含个人身份信息）用于改善产品体验。</li>
+      <li>Apple 账号标识符用于在本设备上识别用户身份，不与任何第三方共享。</li>
+      <li>菜谱、购物清单、烹饪记录等数据仅在本地使用，用于应用功能正常运行。</li>
+      <li>相机和相册权限仅响应你的主动操作，不在后台使用。</li>
+      <li>剪贴板内容仅在你触发导入动作时读取一次，不存储、不上传。</li>
     </ul>
   </div>
 
@@ -175,18 +185,22 @@
 
   <div class="section">
     <div class="section-title"><span class="icon">🗑️</span>数据删除</div>
-    <p>你可以随时在应用「个人中心」中申请注销账号，注销后我们将在 30 个工作日内删除与你账号关联的所有个人数据。</p>
-    <p>如需手动申请删除，请通过下方联系邮箱发送请求，我们将及时处理。</p>
+    <p>由于所有数据均存储在本设备本地，你可以随时通过以下方式删除数据：</p>
+    <ul>
+      <li>在「我的」页面可清除菜谱收藏和烹饪记录。</li>
+      <li>卸载应用后，所有本地数据将由 iOS 系统自动清除。</li>
+    </ul>
+    <p>如需删除 Apple 登录授权，可在 iOS「设置 → Apple ID → 密码与安全性 → 使用 Apple ID 登录的 App」中撤销授权。</p>
   </div>
 
   <div class="section">
     <div class="section-title"><span class="icon">🧒</span>儿童隐私</div>
-    <p>妙做不面向 13 岁以下儿童设计。我们不会故意收集儿童的个人信息。如果你认为我们误收集了相关信息，请通过下方邮箱联系我们删除。</p>
+    <p>煮Fun 不面向 13 岁以下儿童设计。我们不会故意收集儿童的个人信息。如果你认为我们误收集了相关信息，请通过下方邮箱联系我们删除。</p>
   </div>
 
   <div class="section">
     <div class="section-title"><span class="icon">🔄</span>政策更新</div>
-    <p>本隐私政策可能随应用版本更新而修订。若有重大变更，我们会通过应用内通知或注册邮箱告知你。继续使用即视为接受最新政策。</p>
+    <p>本隐私政策可能随应用版本更新而修订。若有重大变更，我们会通过应用内通知告知你。继续使用即视为接受最新政策。</p>
   </div>
 
   <div class="section">
@@ -194,17 +208,17 @@
     <p>如有任何隐私相关的问题、数据访问或删除请求，请通过以下方式联系：</p>
     <div class="contact-box">
       <div class="avatar">
-        <img src="logo.png" alt="妙做" />
+        <img src="logo.png" alt="煮Fun" />
       </div>
       <div class="info">
-        <strong>妙做 CookSnap 开发者</strong>
+        <strong>煮Fun 开发者</strong>
         <a href="mailto:1277329695@qq.com">1277329695@qq.com</a>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    © 2025 妙做 CookSnap · 独立开发者出品
+    © 2026 煮Fun · 独立开发者出品
   </div>
 
 </div>
