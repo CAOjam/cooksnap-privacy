@@ -132,7 +132,7 @@
   </div>
   <h1>隐私政策</h1>
   <p class="sub">煮Fun · Privacy Policy</p>
-  <span class="updated">最后更新：2026 年 6 月 11 日</span>
+  <span class="updated">最后更新：2026 年 7 月 27 日</span>
 </div>
 
 <div class="container">
@@ -152,6 +152,7 @@
       <li><strong>相机权限</strong>：仅在你主动点击「拍照记录」时调用系统相机，用于记录烹饪成果。照片保存在你的设备本地，不会被上传或共享。</li>
       <li><strong>相册写入权限</strong>：仅在你主动选择「保存到相册」时写入系统相册，不会读取你已有的照片。</li>
       <li><strong>剪贴板内容</strong>：当你点击「粘贴链接」按钮时读取剪贴板文字，用于导入菜谱链接，不会在后台自动读取。</li>
+      <li><strong>Apple Watch 数据同步</strong>：当你开启手表同步功能后，烹饪步骤文本通过 iOS 系统内置的 Watch Connectivity 框架在你的 iPhone 与 Apple Watch 之间本地传输。该数据不经过任何外部服务器，不上传至云端，仅在你的设备间直接通信。</li>
     </ul>
     <div class="highlight">
       ⚡ MVP 版本中所有用户数据均存储在本设备本地，无服务器账号同步。我们仅收集提供服务所必要的最少信息。
@@ -163,7 +164,19 @@
     <ul>
       <li><strong>菜谱链接解析</strong>：你粘贴的链接会通过我们的后端服务（阿里云函数计算）转发至 Coze AI 工作流进行菜谱内容识别。该过程仅用于解析菜谱，原始 URL 解析完成后不单独保留，不关联任何个人身份信息。</li>
       <li><strong>封面图片加载</strong>：菜谱封面图片直接从小红书等来源平台的 CDN 加载，仅用于显示，不经过我们的服务器。</li>
-      <li>除以上两项外，应用不进行任何其他网络通信，不追踪用户行为，不投放广告。</li>
+      <li><strong>远程配置</strong>：应用启动时会请求一份轻量级 JSON 配置文件，用于版本兼容性校验（最低支持版本、强制更新版本）和解析性能参数（轮询间隔、超时时间、并发数）。该配置不包含任何功能开关、隐藏功能或用户行为追踪逻辑，不涉及远程代码执行。</li>
+      <li>除以上三项外，应用不进行任何其他网络通信，不追踪用户行为，不投放广告。</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="icon">⌚</span>Apple Watch 功能</div>
+    <p>煮Fun 提供 Apple Watch 配套应用，支持在手腕上浏览烹饪步骤。关于该功能的隐私说明：</p>
+    <ul>
+      <li><strong>数据传输方式</strong>：iPhone 与 Apple Watch 之间通过系统原生 Watch Connectivity 框架进行本地通信，数据不经过任何外部服务器或云端中转。</li>
+      <li><strong>传输内容</strong>：仅传输当前烹饪的步骤文本和翻页进度，不传输个人信息、账号数据或使用记录。</li>
+      <li><strong>用户控制</strong>：Watch 同步功能默认关闭，你可以在 iPhone「个人」页面中随时开启或关闭；也可以在 Watch 端设置中独立关闭接收。</li>
+      <li><strong>数据存储</strong>：Watch 端接收的步骤数据仅在烹饪期间保留于内存中，退出烹饪或关闭应用后自动清除，不持久化存储。</li>
     </ul>
   </div>
 
